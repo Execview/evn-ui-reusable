@@ -1,6 +1,6 @@
 {
 	"name": "@execview/reusable",
-	"version": "0.1.100",
+	"version": "0.1.106",
 	"main": "./src/exports.js",
 	"repository": {
 		"type": "git",
