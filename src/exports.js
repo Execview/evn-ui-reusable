@@ -13,12 +13,10 @@ import recursiveDeepAssign from './Functions/recursiveDeepAssign'
 import recursiveDeepCopy from './Functions/recursiveDeepCopy'
 import recursiveDeepDiffs from './Functions/recursiveDeepDiffs'
 import recursiveDeepDiffsREACT from './Functions/recursiveDeepDiffsREACT'
-import fetchy from './Functions/fetchy'
 import useFunctionalRef from './Functions/useFunctionalRef'
 import useDimensions from './Functions/useDimensions'
-import { getOurCookie, setOurCookie } from './Functions/ourCookies'
 
-module.exports = {
+const module = {
 	Button,
 	GenericDropdown,
 	PropInspector,
@@ -33,9 +31,8 @@ module.exports = {
 	recursiveDeepCopy,
 	recursiveDeepDiffs,
 	recursiveDeepDiffsREACT,
-	fetchy,
 	useFunctionalRef,
-	useDimensions,
-	getOurCookie,
-	setOurCookie
-};
+	useDimensions
+}
+
+export default module

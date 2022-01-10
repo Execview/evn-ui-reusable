@@ -10,7 +10,6 @@ import recursiveDeepAssign from './Functions/recursiveDeepAssign'
 import recursiveDeepCopy from './Functions/recursiveDeepCopy'
 import recursiveDeepDiffs from './Functions/recursiveDeepDiffs'
 import recursiveDeepDiffsREACT from './Functions/recursiveDeepDiffsREACT'
-import fetchy from './Functions/fetchy'
 import RightClickMenuWrapper from './Components/RightClickMenu/RightClickMenuWrapper';
 import { useThemeApplier, defaultTheme } from '@execview/themedesigner'
 
@@ -116,12 +115,6 @@ export default App;
 		// const rdda = {a: 'oompa loompa', b: [1,2,{thr:'thr'}], c: null, d: (new Date()).toISOString(), e: <Button/>}
 		// const rddb = {a: 'oompa loompa', b: [1,4,{thr:'thr'}], c: 'test', d: (new Date()).toISOString()}
 		// console.log(recursiveDeepDiffsREACT(rdda,rddb))
-	
-	//fetchy
-		fetchy('https://evnext-api.evlem.net/api/login',{preview:true, timeout: 10000, body:{username: 'namyts', password: 'password'}, basic: {user: 'me', password:'pwd'}})
-		.catch(r=>{console.log(r);return {token: 'mytoken'}})
-		.then(data=>console.log(data))
-
 
 // BENCHMARK TEST
 // const size = 50000
