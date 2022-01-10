@@ -16,7 +16,7 @@ import recursiveDeepDiffsREACT from './Functions/recursiveDeepDiffsREACT'
 import useFunctionalRef from './Functions/useFunctionalRef'
 import useDimensions from './Functions/useDimensions'
 
-const module = {
+export {
 	Button,
 	GenericDropdown,
 	PropInspector,
@@ -35,4 +35,4 @@ const module = {
 	useDimensions
 }
 
-export default module
+export default null
