@@ -1,13 +1,13 @@
 {
 	"name": "@execview/reusable",
-	"version": "0.1.107",
-	"main": "./src/exports.js",
+	"version": "0.1.108",
+	"main": "./transpiled/exports.js",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Execview/evn-ui-reusable.git"
 	},
 	"dependencies": {
-		"@execview/themedesigner": "0.1.17",
+		"@execview/themedesigner": "0.1.18",
 		"moment": "2.29.1",
 		"react": "17.0.2",
 		"react-datepicker": "^4.6.0",
@@ -21,9 +21,16 @@
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"prepublishOnly": "npm --no-git-tag-version version patch",
-		"clean": "npx --yes rimraf node_modules package-lock.json"
+		"prepublishOnly": "npm --no-git-tag-version version patch && npm run installTranspiler && npm run transpile",
+		"postpublish": "npx --yes rimraf transpiled",
+		"installTranspiler": "npm install --no-save @babel/cli @babel/preset-react",
+		"transpile": "npx babel src -d transpiled --copy-files --presets=@babel/preset-react",
+		"clean": "npx --yes rimraf node_modules transpiled package-lock.json"
 	},
+	"files": [
+		"/public",
+		"/transpiled"
+	],
 	"browserslist": {
 		"production": [
 			">0.2%",
