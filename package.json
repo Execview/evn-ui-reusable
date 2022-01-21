@@ -1,13 +1,13 @@
 {
 	"name": "@execview/reusable",
-	"version": "0.1.108",
+	"version": "0.1.110",
 	"main": "./transpiled/exports.js",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Execview/evn-ui-reusable.git"
 	},
 	"dependencies": {
-		"@execview/themedesigner": "0.1.18",
+		"@execview/themedesigner": "0.1.20",
 		"moment": "2.29.1",
 		"react": "17.0.2",
 		"react-datepicker": "^4.6.0",
