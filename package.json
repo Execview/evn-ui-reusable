@@ -1,21 +1,21 @@
 {
 	"name": "@execview/reusable",
-	"version": "0.1.115",
+	"version": "0.1.116",
 	"main": "./transpiled/exports.js",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Execview/evn-ui-reusable.git"
 	},
 	"dependencies": {
-		"@execview/themedesigner": "0.1.24",
+		"@execview/themedesigner": "0.1.27",
 		"moment": "2.29.1",
 		"react": "17.0.2",
-		"react-datepicker": "^4.6.0",
+		"react-datepicker": "^4.7.0",
 		"react-device-detect": "^2.1.2",
 		"react-dom": "17.0.2",
 		"react-onclickoutside": "^6.12.1",
 		"react-scripts": "5.0.0",
-		"react-scroll": "^1.8.4"
+		"react-scroll": "^1.8.6"
 	},
 	"scripts": {
 		"start": "react-scripts start",
@@ -23,8 +23,8 @@
 		"test": "react-scripts test",
 		"prepublishOnly": "npm --no-git-tag-version version patch && npm run installTranspiler && npm run transpile",
 		"postpublish": "npx --yes rimraf transpiled",
-		"installTranspiler": "npm install --no-save @babel/cli @babel/preset-react @babel/plugin-syntax-import-assertions",
-		"transpile": "npx babel src -d transpiled --copy-files --presets=@babel/preset-react --plugins=@babel/plugin-syntax-import-assertions",
+		"installTranspiler": "npm install --no-save @babel/cli @babel/preset-react",
+		"transpile": "npx babel src -d transpiled --copy-files --presets=@babel/preset-react",
 		"clean": "npx --yes rimraf node_modules transpiled build package-lock.json"
 	},
 	"files": [
