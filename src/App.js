@@ -40,7 +40,7 @@ const App = (props) => {
 		n: {name: 'long', comp: <div>looooooooooooong</div>},
 		o: {name: 'five', comp: <div>2.23606797749978</div>},
 	}
-	const GenericDropdownPropsOptions = Object.keys(GenericDropdownPropsAllOptions).filter(id=>GenericDropdownPropsAllOptions[id].name.includes(genericDropdownPropsSearchString)).reduce((t,i)=>{ return {...t,[i]:GenericDropdownPropsAllOptions[i].comp}},{})
+	const GenericDropdownPropsOptions = Object.keys(GenericDropdownPropsAllOptions).filter(id=>GenericDropdownPropsAllOptions[id].name.includes(genericDropdownPropsSearchString)).reduce((t,i)=>({...t,[i]:GenericDropdownPropsAllOptions[i].comp}),{})
 	const GenericDropdownProps = {
 		submit: ((optionid)=>console.log(optionid)),
 		options: GenericDropdownPropsOptions,
