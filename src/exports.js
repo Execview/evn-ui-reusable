@@ -13,7 +13,6 @@ import recursiveDeepAssign from './Functions/recursiveDeepAssign'
 import recursiveDeepCopy from './Functions/recursiveDeepCopy'
 import recursiveDeepDiffs from './Functions/recursiveDeepDiffs'
 import recursiveDeepDiffsREACT from './Functions/recursiveDeepDiffsREACT'
-import useFunctionalRef from './Functions/useFunctionalRef'
 import useDimensions from './Functions/useDimensions'
 
 export {
@@ -31,7 +30,6 @@ export {
 	recursiveDeepCopy,
 	recursiveDeepDiffs,
 	recursiveDeepDiffsREACT,
-	useFunctionalRef,
 	useDimensions
 }
 

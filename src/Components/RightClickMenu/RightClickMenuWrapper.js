@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import RightClickMenu from './RightClickMenu';
-import useFunctionalRef from '../../Functions/useFunctionalRef';
 import useDimensions from '../../Functions/useDimensions';
 
 const RightClickMenuWrapper = (props) => {
 	const getParentFromCurrent = (c) => c && c.parentNode
-	const [wrapperRef, current] = useFunctionalRef();
+	const wrapperRef = useRef()
 	const [wrapperRefCopy, getParentDimensions] = useDimensions({ref: wrapperRef, getNodeFromCurrent: getParentFromCurrent})
-	const parentNode = getParentFromCurrent(current)
+	const parentNode = getParentFromCurrent(wrapperRef?.current)
 	const [selfOpen, setSelfOpen] = useState(false)
 	const [open, setOpen] = props.setOpen ? [props.open,props.setOpen] : [selfOpen, setSelfOpen]
 	const [position, setPosition] = useState(null);

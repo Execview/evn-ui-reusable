@@ -1,14 +1,14 @@
-import useFunctionalRef from "./useFunctionalRef"
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 const useDimensions = (options={}) => {
 	const replacementRef = options.ref
 	const getNodeFromCurrent = options.getNodeFromCurrent || ((c)=>c)
 	const windowSize = useWindowSize()
-	const [myRef, current] = useFunctionalRef(replacementRef)
+	const internalRef = useRef()
+	const myRef = replacementRef || internalRef
 
 	const getRect = () => {
-		const currentNode = getNodeFromCurrent(current)
+		const currentNode = getNodeFromCurrent(myRef?.current)
 		const BCR = currentNode && currentNode.getBoundingClientRect();
 		if(!BCR){return {}}
 		const rect = {
