@@ -1,11 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import RightClickMenu from './RightClickMenu';
 import useDimensions from '../../Functions/useDimensions';
 
 const RightClickMenuWrapper = (props) => {
 	const getParentFromCurrent = (c) => c && c.parentNode
-	const wrapperRef = useRef()
-	const [wrapperRefCopy, getParentDimensions] = useDimensions({ref: wrapperRef, getNodeFromCurrent: getParentFromCurrent})
+	const [wrapperRef, getParentDimensions] = useDimensions({getNodeFromCurrent: getParentFromCurrent})
 	const parentNode = getParentFromCurrent(wrapperRef?.current)
 	const [selfOpen, setSelfOpen] = useState(false)
 	const [open, setOpen] = props.setOpen ? [props.open,props.setOpen] : [selfOpen, setSelfOpen]
@@ -46,7 +45,7 @@ const RightClickMenuWrapper = (props) => {
 	});
 
 	return (
-        <div ref={wrapperRefCopy}>
+        <div ref={wrapperRef}>
 			{position && open && (
 				<RightClickMenu
 					rightClickDOMNode={props.rightClickDOMNode}

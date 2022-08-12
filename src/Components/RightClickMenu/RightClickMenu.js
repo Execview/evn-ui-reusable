@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 import ReactDOM from 'react-dom'
 import Panel from './Panel/Panel'
 import OCO from '../OCO/OCO'
@@ -8,7 +8,14 @@ import useDimensions from '../../Functions/useDimensions'
 const RightClickMenu = (props) => {
 	const rightClickDOMNode = props.rightClickDOMNode || document.getElementById('root')
 	const [selfRef, getDimensions] = useDimensions()
-	const selfDimensions = getDimensions()
+
+	const [selfDimensions, setSelfDimensions] = useState({})
+	useLayoutEffect(()=>{
+		const newDimensions = getDimensions()
+		if(JSON.stringify(newDimensions)!==JSON.stringify(selfDimensions)){
+			setSelfDimensions(newDimensions)
+		}
+	})
 
 	const page = {width: Math.min(window.innerWidth,rightClickDOMNode.clientWidth), height: Math.min(window.innerHeight,rightClickDOMNode.clientHeight)}
 	const menu = {width: selfDimensions.width || 0, height: selfDimensions.height || 0}
