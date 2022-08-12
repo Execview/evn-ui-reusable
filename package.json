@@ -1,21 +1,21 @@
 {
 	"name": "@execview/reusable",
-	"version": "0.1.118",
+	"version": "0.1.119",
 	"main": "./transpiled/exports.js",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Execview/evn-ui-reusable.git"
 	},
 	"dependencies": {
-		"@execview/themedesigner": "0.1.27",
-		"moment": "2.29.1",
-		"react": "17.0.2",
-		"react-datepicker": "^4.7.0",
-		"react-device-detect": "^2.1.2",
-		"react-dom": "17.0.2",
-		"react-onclickoutside": "^6.12.1",
-		"react-scripts": "5.0.0",
-		"react-scroll": "^1.8.6"
+		"@execview/themedesigner": "0.1.28",
+		"moment": "2.29.4",
+		"react": "18.2.0",
+		"react-datepicker": "^4.8.0",
+		"react-device-detect": "^2.2.2",
+		"react-dom": "18.2.0",
+		"react-onclickoutside": "^6.12.2",
+		"react-scripts": "5.0.1",
+		"react-scroll": "^1.8.7"
 	},
 	"scripts": {
 		"dev": "react-scripts start",
