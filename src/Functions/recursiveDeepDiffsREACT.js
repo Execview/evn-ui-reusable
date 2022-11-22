@@ -1,5 +1,5 @@
 import React from 'react'
-import recursiveDeepDiffs from './recursiveDeepDiffs'
+import recursiveDeepDiffs from './recursiveDeepDiffs.js'
 const recursiveDeepDiffsREACT = (original,updated) => {
 	  const filterReactComponent = (c) => {
 	    const { _owner, $$typeof, ...rest } = c;

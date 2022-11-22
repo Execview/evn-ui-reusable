@@ -1,16 +1,16 @@
 import React, {useState} from 'react';
-import Button from './Components/Button/Button'
-import CircleUser from './Components/CircleUser/CircleUser'
-import GenericDropdown from './Components/GenericDropdown/GenericDropdown'
-import TripleFill from './Components/TripleFill/TripleFill'
-import injectObjectInObject from './Functions/injectObjectInObject'
-import objectCopierWithStringToDate from './Functions/objectCopierWithStringToDate'
-import orderedObjectAssign from './Functions/orderedObjectAssign'
-import recursiveDeepAssign from './Functions/recursiveDeepAssign'
-import recursiveDeepCopy from './Functions/recursiveDeepCopy'
-import recursiveDeepDiffs from './Functions/recursiveDeepDiffs'
-import recursiveDeepDiffsREACT from './Functions/recursiveDeepDiffsREACT'
-import RightClickMenuWrapper from './Components/RightClickMenu/RightClickMenuWrapper';
+import Button from './Components/Button/Button.js'
+import CircleUser from './Components/CircleUser/CircleUser.js'
+import GenericDropdown from './Components/GenericDropdown/GenericDropdown.js'
+import TripleFill from './Components/TripleFill/TripleFill.js'
+import injectObjectInObject from './Functions/injectObjectInObject.js'
+import objectCopierWithStringToDate from './Functions/objectCopierWithStringToDate.js'
+import orderedObjectAssign from './Functions/orderedObjectAssign.js'
+import recursiveDeepAssign from './Functions/recursiveDeepAssign.js'
+import recursiveDeepCopy from './Functions/recursiveDeepCopy.js'
+import recursiveDeepDiffs from './Functions/recursiveDeepDiffs.js'
+import recursiveDeepDiffsREACT from './Functions/recursiveDeepDiffsREACT.js'
+import RightClickMenuWrapper from './Components/RightClickMenu/RightClickMenuWrapper.js';
 import { useThemeApplier, defaultTheme } from '@execview/themedesigner'
 
 import classes from './App.module.css';

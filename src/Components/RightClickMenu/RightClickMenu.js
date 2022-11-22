@@ -1,9 +1,9 @@
 import React, { useLayoutEffect, useState } from 'react'
 import ReactDOM from 'react-dom'
-import Panel from './Panel/Panel'
-import OCO from '../OCO/OCO'
+import Panel from './Panel/Panel.js'
+import OCO from '../OCO/OCO.js'
 import classes from './RightClickMenu.module.css'
-import useDimensions from '../../Functions/useDimensions'
+import useDimensions from '../../Functions/useDimensions.js'
 
 const RightClickMenu = (props) => {
 	const rightClickDOMNode = props.rightClickDOMNode || document.getElementById('root')

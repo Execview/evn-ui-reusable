@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import version from './version'
+import App from './App.js';
+import * as serviceWorker from './serviceWorker.js';
+import version from './version.js'
 console.log(`Refreshed at: ${version.version}`)
 
 ReactDOM.render(<App />, document.getElementById('root'));

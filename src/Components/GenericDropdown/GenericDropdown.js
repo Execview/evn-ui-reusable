@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo } from 'react';
-import OCO from '../OCO/OCO'
+import OCO from '../OCO/OCO.js'
 import {Element, scroller} from 'react-scroll'
 import classes from './GenericDropdown.module.css';
 

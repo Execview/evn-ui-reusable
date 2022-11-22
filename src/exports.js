@@ -1,19 +1,19 @@
-import Button from './Components/Button/Button'
-import GenericDropdown from './Components/GenericDropdown/GenericDropdown';
-import PropInspector from './Components/PropInspector/PropInspector'
-import TripleFill from './Components/TripleFill/TripleFill'
-import CircleUser from './Components/CircleUser/CircleUser';
-import OCO from './Components/OCO/OCO'
-import RightClickMenuWrapper from './Components/RightClickMenu/RightClickMenuWrapper'
+import Button from './Components/Button/Button.js'
+import GenericDropdown from './Components/GenericDropdown/GenericDropdown.js';
+import PropInspector from './Components/PropInspector/PropInspector.js'
+import TripleFill from './Components/TripleFill/TripleFill.js'
+import CircleUser from './Components/CircleUser/CircleUser.js';
+import OCO from './Components/OCO/OCO.js'
+import RightClickMenuWrapper from './Components/RightClickMenu/RightClickMenuWrapper.js'
 
-import injectObjectInObject from './Functions/injectObjectInObject'
-import objectCopierWithStringToDate from './Functions/objectCopierWithStringToDate'
-import orderedObjectAssign from './Functions/orderedObjectAssign'
-import recursiveDeepAssign from './Functions/recursiveDeepAssign'
-import recursiveDeepCopy from './Functions/recursiveDeepCopy'
-import recursiveDeepDiffs from './Functions/recursiveDeepDiffs'
-import recursiveDeepDiffsREACT from './Functions/recursiveDeepDiffsREACT'
-import useDimensions from './Functions/useDimensions'
+import injectObjectInObject from './Functions/injectObjectInObject.js'
+import objectCopierWithStringToDate from './Functions/objectCopierWithStringToDate.js'
+import orderedObjectAssign from './Functions/orderedObjectAssign.js'
+import recursiveDeepAssign from './Functions/recursiveDeepAssign.js'
+import recursiveDeepCopy from './Functions/recursiveDeepCopy.js'
+import recursiveDeepDiffs from './Functions/recursiveDeepDiffs.js'
+import recursiveDeepDiffsREACT from './Functions/recursiveDeepDiffsREACT.js'
+import useDimensions from './Functions/useDimensions.js'
 
 export {
 	Button,

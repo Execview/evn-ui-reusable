@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import RightClickMenu from './RightClickMenu';
-import useDimensions from '../../Functions/useDimensions';
+import RightClickMenu from './RightClickMenu.js';
+import useDimensions from '../../Functions/useDimensions.js';
 
 const RightClickMenuWrapper = (props) => {
 	const getParentFromCurrent = (c) => c && c.parentNode
