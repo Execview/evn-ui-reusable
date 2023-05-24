@@ -40,8 +40,14 @@ const recursiveDeepDiffs = (o,u,options={}) => {
 				}
 			}		
 			if(utypereal === '[object Date]') {
-				if(o.toISOString() !== u.toISOString()) {
-					return sit.updated(o,u);
+				const ot = o.getTime()
+				const ut = u.getTime()
+				if(ot !== ut) {
+					if(isNaN(ot) && isNaN(ut)){
+						return sit.equal
+					} else {
+						return sit.updated(o,u)
+					}
 				} else {
 					return sit.equal
 				}
